@@ -1,3 +1,4 @@
+```mermaid
 ---
 config:
   look: classic
@@ -32,3 +33,4 @@ classDiagram
         Contract "0..*"--"1..1" Airline
         Contract "0..*"--"1..1" Employee
         Airline "0..1"--"0..*" Airline
+```
