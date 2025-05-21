@@ -1,3 +1,4 @@
+```mermaid
 ---
 config:
   look: classic
@@ -71,3 +72,4 @@ direction TB
     OnlineTicket "1..1" -- "0..1" AlternativeOffer
     Seat "1..1" -- "0..*" AlternativeOffer
     Show "1..1" -- "0..*" AlternativeOffer
+```
