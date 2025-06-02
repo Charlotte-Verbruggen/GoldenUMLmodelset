@@ -11,38 +11,90 @@
   "timestamp":"2025-05-21",
   "formats":["md"],
   "tags":[],
-  "extraMaterial":["Boeing_UML_Feedback.pdf"]
+  "extraMaterial":["Boeing_UML_Feedback.pdf"],
   "elements":[
     {
-      "id":"",
-      "name":"",
-      "type":""
+      "id":"01",
+      "name":"AirplaneModel",
+      "type":"Class"
     },
     {
-      "id":"",
-      "name":"",
-      "type":""
+      "id":"02",
+      "name":"Airplane",
+      "type":"Class"
     },
     {
-      "id":"",
-      "name":"",
-      "type":""
+      "id":"03",
+      "name":"Acquisition",
+      "type":"Class"
     },
     {
-      "id":"",
-      "name":"",
-      "type":""
+      "id":"04",
+      "name":"Contract",
+      "type":"Class"
     },
     {
-      "id":"",
-      "name":"",
-      "type":""
+      "id":"05",
+      "name":"Employee",
+      "type":"Class"
     },
     {
-      "id":"",
-      "name":"",
-      "type":""
+      "id":"06",
+      "name":"Airline",
+      "type":"Class"
+    }
+  ],
+  "relationships":[
+    {
+      "id":"07",
+      "sourceId":"01",
+      "targetId":"02",
+      "type":"Association",
+      "sourceCardinality":"1..1",
+      "targetCardinality":"0..*",
+      "label":""
     },
-    
-  ]
+    {
+      "id":"08",
+      "sourceId":"02",
+      "targetId":"03",
+      "type":"Association",
+      "sourceCardinality":"0..1",
+      "targetCardinality":"0..1",
+      "label":"part of"
+    },
+    {
+      "id":"09",
+      "sourceId":"04",
+      "targetId":"03",
+      "type":"Association",
+      "sourceCardinality":"1..1",
+      "targetCardinality":"0..*",
+      "label":"part of"
+    },{
+      "id":"10",
+      "sourceId":"05",
+      "targetId":"04",
+      "type":"Association",
+      "sourceCardinality":"1..1",
+      "targetCardinality":"0..*",
+      "label":"Manager of"
+    },{
+      "id":"11",
+      "sourceId":"06",
+      "targetId":"04",
+      "type":"Association",
+      "sourceCardinality":"1..1",
+      "targetCardinality":"0..*",
+      "label":""
+    },{
+      "id":"12",
+      "sourceId":"06",
+      "targetId":"06",
+      "type":"Association",
+      "sourceCardinality":"0..1",
+      "targetCardinality":"0..*",
+      "label":"mother of"
+    },
+  ]  
 }
