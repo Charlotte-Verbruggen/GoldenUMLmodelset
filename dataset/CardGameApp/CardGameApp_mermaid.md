@@ -1,11 +1,11 @@
 ```mermaid
 classDiagram
 
-class Spiel {
+class Game {
   int ID
 }
 
-class Spieler {
+class Player {
   int ID
 }
 
@@ -13,72 +13,72 @@ class Deck {
   int ID
 }
 
-class Karte {
+class Card {
   int ID
-  Farbe farbe
-  Compare compare(Karte)
+  Suit suit
+  Compare compare(Card)
 }
 
-class Tabelle {
+class Scoreboard {
   int ID
 }
 
-class Runde {
+class Round {
   int ID
-  int Punkte
+  int points
 }
 
-class Rundentyp {
+class RoundType {
   <<abstract>>
   int ID
 }
 
-class Solorunde {
-  Soloart solo
+class SoloRound {
+  SoloType solo
 }
 
-class Pflichtsolo 
+class MandatorySolo
 
-class Bockrunde 
+class DoubleRound 
 
-class Farbe {
+class Suit {
   <<enum>>
-  Karo
-  Herz
-  Pik
-  Kreuz
+  Diamonds
+  Hearts
+  Spades
+  Clubs
 }
 
 class Compare {
   <<enum>>
-  Niedriger
-  Höher
-  Gleich
+  Lower
+  Higher
+  Equal
 }
 
-class Soloart {
+class SoloType {
   <<enum>>
-  Trumpf
-  Buben
-  Damen
+  Trump
+  Jacks
+  Queens
 }
 
-Spiel --> "1" Tabelle
-Spiel --> "1" Deck
-Spiel --> "4" Spieler
+Game --> "1" Scoreboard
+Game --> "1" Deck
+Game --> "4" Player
 
-Deck --> "0..48" Karte
+Deck --> "0..48" Card
 
-Tabelle --> "*" Runde
+Scoreboard --> "*" Round
 
-Spieler --> "1..3" Runde
-Spieler --> "1..2" Rundentyp
+Player --> "1..3" Round
+Player --> "1..2" RoundType
 
-Rundentyp <|-- Solorunde
-Rundentyp <|-- Bockrunde
-Solorunde <|-- Pflichtsolo
+RoundType <|-- SoloRound
+RoundType <|-- DoubleRound
+SoloRound <|-- MandatorySolo
 
-Karte --> Farbe
-Karte --> Compare
-Solorunde --> Soloart
+Card --> Suit
+Card --> Compare
+SoloRound --> SoloType
 ```
