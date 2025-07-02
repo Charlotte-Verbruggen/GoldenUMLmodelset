@@ -1,4 +1,4 @@
-```plantuml
+```plantUML
 @startuml
     class Bank
 
