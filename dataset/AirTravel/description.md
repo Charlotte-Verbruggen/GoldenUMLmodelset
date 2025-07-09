@@ -5,3 +5,4 @@ A passenger aircraft can have several seat categories. The designation of each c
 Each aircraft can be part of an airline, whose name is stored. 
 An airline employs several flight attendants and pilots. The name, date of employment, and whether the flight attendant is a chief steward or stewardess are stored for flight attendants. The name, date of employment, and license are stored for pilots.
 Several flight attendants work on a flight. One pilot flies the aircraft as the captain and one or two other pilots act as co-pilots.
+The name, address, and number of runways are stored for airports. Each aircraft can have a home airport. Each flight has a departure airport and a destination airport.
