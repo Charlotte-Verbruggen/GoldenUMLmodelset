@@ -1,0 +1,5 @@
+name: BankAccount
+language: English
+tags: 
+source: RWTH SWTExamWS1213
+domain: logistics, automotive

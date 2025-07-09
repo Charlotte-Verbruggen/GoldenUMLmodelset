@@ -1,5 +1,4 @@
 ```plantuml
-
 @startuml
 
     class SensorController {
@@ -58,5 +57,4 @@
     Apartment "1" --> "*" Sensor
 
 @enduml
-
 ```

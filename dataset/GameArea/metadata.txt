@@ -1,0 +1,5 @@
+name: BoardGameArea
+language: English
+tags: game, boardgame
+domain: 
+source: RWTH SWTExamWS1415

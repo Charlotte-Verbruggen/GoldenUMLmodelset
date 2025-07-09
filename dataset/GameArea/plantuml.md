@@ -1,5 +1,4 @@
 ```plantuml
-
 @startuml
     class GameArea {
         String name
@@ -32,5 +31,4 @@
     GameArea "1" --> "1" Enemy : finalBoss
 
 @enduml
-
 ```

@@ -1,5 +1,4 @@
 ```plantuml
-
 @startuml
 
 class Airline {
@@ -82,5 +81,4 @@ SeatCategory "0..1"--"0..*" Ticket
 (FlightExecution, Passenger) . Ticket
 
 @enduml
-
 ```
