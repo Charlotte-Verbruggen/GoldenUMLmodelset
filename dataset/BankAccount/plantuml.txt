@@ -1,4 +1,3 @@
-```plantUML
 @startuml
     class Bank
 
@@ -26,4 +25,3 @@
     Account <|-- SavingsAccount
     Account <|-- CheckingAccount
 @enduml
-```

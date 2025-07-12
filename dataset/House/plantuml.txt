@@ -1,11 +1,10 @@
-```plantuml
 @startuml
 
 class ConcreteBasement {
     Double Quality
 }
 
-abstract Basement <<abstract>> {
+abstract class Basement {
     Double Size
     String Name
 }
@@ -20,7 +19,7 @@ class EarthBasement {
     Double Humidity
 }
 
-abstract SemiDetached <<abstract>> {
+abstract class SemiDetached {
     Boolean Garden
     Int Windows
 }
@@ -66,4 +65,3 @@ SemiDetachedWithCarport "1"-"2" Carport
 SemiDetachedWithGarage "1"-"1" Garage
 
 @enduml
-```

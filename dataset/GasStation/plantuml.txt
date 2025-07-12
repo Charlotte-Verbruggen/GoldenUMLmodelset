@@ -1,4 +1,3 @@
-```plantuml
 @startuml
 
 class GasStation {
@@ -36,4 +35,3 @@ FuelPump "*"--"*" Fuel
 
 
 @enduml
-```

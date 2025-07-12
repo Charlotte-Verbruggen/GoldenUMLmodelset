@@ -1,4 +1,3 @@
-```plantuml
 @startuml
 
     class Cinema {
@@ -68,4 +67,3 @@
     Show "1..1" -- "0..*" AlternativeOffer
 
 @enduml
-```

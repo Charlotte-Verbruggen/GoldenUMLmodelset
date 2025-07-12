@@ -1,4 +1,3 @@
-```plantuml
 @startuml
 
 class City {
@@ -38,4 +37,3 @@ GuidedTour "*"-"1" Guide
 (Visitor,GuidedTour) .. Discount
 
 @enduml
-```

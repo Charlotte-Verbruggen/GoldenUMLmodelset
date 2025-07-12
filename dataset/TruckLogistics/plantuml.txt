@@ -1,5 +1,3 @@
-```plantuml
-
 @startuml
 
     class Assignment {
@@ -50,5 +48,3 @@
     Vehicle "1" --> "1" VehicleStatus : status
 
 @enduml
-
-```

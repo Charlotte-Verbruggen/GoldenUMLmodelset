@@ -1,4 +1,3 @@
-```plantUML
 @startuml
 
 class AirplaneModel {
@@ -38,4 +37,3 @@ Contract "0..*" -- "1" Employee
 Airline "0..1" -- "0..*" Airline
 
 @enduml
-```

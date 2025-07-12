@@ -1,9 +1,7 @@
-```plantuml
-
 @startuml
 
 
-abstract Employee <<abstract>> {
+abstract class Employee {
   ssNo: int
   name: String
   email: String
@@ -54,5 +52,3 @@ Lecturer "1..*" -- "1..*" Course : teaches >
 (ResearchAssociate, Project) .. Participation
 
 @enduml
-
-```

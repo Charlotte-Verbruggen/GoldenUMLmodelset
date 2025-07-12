@@ -15,3 +15,16 @@ Supported transformations:
 - Mermaid <-> PlantUML
 - Mermaid <-> CD4A
 
+
+## Dev Notes
+
+### Generate plantUML Images
+
+Download a compiled plantUML JAR from [here](https://plantuml.com/download).
+
+Replace `<model>` with the name in the dataset and execute the following:
+```
+java -jar plantuml.jar dataset/<Model>/plantuml.txt
+```
+
+

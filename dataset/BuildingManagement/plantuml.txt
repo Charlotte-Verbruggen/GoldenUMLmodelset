@@ -1,4 +1,3 @@
-```plantUML
 @startUML
     class User {
         String username
@@ -68,4 +67,3 @@
     Building "1" --> "1" Image : profilePicture
     Building "1" --> "1" EnergyClass
 @endUML
-```

@@ -1,7 +1,6 @@
-```plantuml
 @startuml
 
-abstract Person <<abstract>> {
+abstract class Person {
     String FirstName
     String LastName
 }
@@ -24,7 +23,7 @@ class School {
     String Name
 }
 
-abstract Room <<abstract>> {
+abstract class Room {
     String Name
 }
 
@@ -48,4 +47,3 @@ Student "10..31"-o"1" ClassGroup
 ClassGroup "1"-"1" ClassRoom
 
 @enduml
-```
