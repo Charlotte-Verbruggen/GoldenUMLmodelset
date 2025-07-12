@@ -1,4 +1,4 @@
-@startUML
+@startuml
     class User {
         String username
         String password
@@ -66,4 +66,4 @@
     Building "1" --> "*" Comment
     Building "1" --> "1" Image : profilePicture
     Building "1" --> "1" EnergyClass
-@endUML
+@enduml
