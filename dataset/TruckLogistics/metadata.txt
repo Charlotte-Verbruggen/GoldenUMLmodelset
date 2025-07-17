@@ -1,7 +1,7 @@
 name: TruckLogistics
 language: English
 tags: automotive
-domain: logistics
+domain: Logistics
 source: RWTH SWTExamWS1213
 citation: 
 contact: netz@se-rwth.de
