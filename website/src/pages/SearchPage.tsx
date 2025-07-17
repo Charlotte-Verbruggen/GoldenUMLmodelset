@@ -35,10 +35,10 @@ export default function SearchPage() {
     }, []);
 
     const allProperties = PROPERTY_BADGES.map((b) => b.key);
-    const allLanguages = Array.from(new Set(models.map(m => m.language).filter(Boolean)));
-    const allDomains = Array.from(new Set(models.flatMap(m => m.domain || [])));
-    const allTags = Array.from(new Set(models.flatMap(m => m.tags || [])));
-    const allSources = Array.from(new Set(models.map(m => m.source).filter(Boolean)));
+    const allLanguages = Array.from(new Set(models.map(m => m.language).filter(Boolean))).sort();
+    const allDomains = Array.from(new Set(models.flatMap(m => m.domain || []))).sort();
+    const allTags = Array.from(new Set(models.flatMap(m => m.tags || []))).sort();
+    const allSources = Array.from(new Set(models.map(m => m.source).filter(Boolean))).sort();
 
     const filteredModels = models.filter((model) => {
         const q = query.toLowerCase();
