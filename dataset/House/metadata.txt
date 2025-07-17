@@ -1,5 +1,7 @@
 name: House
 language: English 
 tags: 
-domain: Construction 
+domain: Manufacturing 
 source: TU Wien, Business Informatics Group
+citation: 
+contact: 
