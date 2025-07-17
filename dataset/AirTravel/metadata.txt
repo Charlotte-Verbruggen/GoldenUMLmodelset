@@ -1,5 +1,7 @@
 name: Air Travel
 language: English
 tags:
-domain: travel
+domain: Logistics
 source: TU Wien, Business Informatics Group
+citation:
+contact:
