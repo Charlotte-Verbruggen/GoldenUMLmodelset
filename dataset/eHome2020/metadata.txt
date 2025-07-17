@@ -1,0 +1,7 @@
+name: eHome2020
+language: English
+tags: 
+domain: Manufacturing
+source: RWTH
+citation: 
+contact: netz@se-rwth.de
