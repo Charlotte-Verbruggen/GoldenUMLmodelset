@@ -1,5 +1,7 @@
 name: University
 language: English
 tags:
-domain: university management
+domain: Education
 source: TU Wien, Business Informatics Group
+citation: 
+contact: 
