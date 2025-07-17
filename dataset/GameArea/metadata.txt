@@ -1,5 +1,7 @@
 name: BoardGameArea
 language: English
 tags: game, boardgame
-domain: 
+domain: Media and Publishing
 source: RWTH SWTExamWS1415
+citation: 
+contact: netz@se-rwth.de
