@@ -1,5 +1,7 @@
 name: FilmSet
 language: English 
 tags: 
-domain: Film industry 
+domain: Media and Publishing
 source: TU Wien, Business Informatics Group
+citation: 
+contact: 
