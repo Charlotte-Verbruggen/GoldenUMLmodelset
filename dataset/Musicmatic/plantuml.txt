@@ -41,7 +41,7 @@ Artist "1"--"*" Song
 Song <|-- Hit : {total; disjoint}
 Song <|--Single
 Hit "*"--"*" Album
-Track..(Hit,Album)
+Track .. (Hit,Album)
 Song "*"-"1" BusinessUser
 BusinessUser --|> User : {total; overlap}
 User <|-- RegularUser
