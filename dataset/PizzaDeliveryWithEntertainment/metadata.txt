@@ -1,7 +1,7 @@
 name: PizzaDeliveryWithEntertainment
 language: English 
 tags: 
-domain: Sales
+domain: Leisure and Recreation
 source: KU Leuven, LIRIS
 citation: Lemahieu, W., vanden Broucke, S., & Baesens, B. (2018). Principles of Database Management: The Practical Guide to Storing, Managing and Analyzing Big and Small Data. Cambridge: Cambridge University Press. 
 contact: 
