@@ -1,0 +1,7 @@
+name: BuildingManagement
+language: English
+tags: 
+domain: Business Services
+source: RWTH
+citation: 
+contact: netz@se-rwth.de
