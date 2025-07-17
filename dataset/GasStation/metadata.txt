@@ -1,5 +1,7 @@
 name: GasStation
 language: English 
 tags: 
-domain: Service provider 
+domain: Sales
 source: TU Wien, Business Informatics Group
+citation: 
+contact: 
