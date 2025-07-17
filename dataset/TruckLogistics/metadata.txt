@@ -1,5 +1,7 @@
-name: BankAccount
+name: TruckLogistics
 language: English
-tags: 
+tags: automotive
+domain: logistics
 source: RWTH SWTExamWS1213
-domain: logistics, automotive
+citation: 
+contact: netz@se-rwth.de
