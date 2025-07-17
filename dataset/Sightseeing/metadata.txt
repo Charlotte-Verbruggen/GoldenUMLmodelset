@@ -1,5 +1,7 @@
 name: Sightseeing
 language: English 
 tags: 
-domain: Tourism 
+domain: Leisure and Recreation 
 source: TU Wien, Business Informatics Group
+citation: 
+contact: 
