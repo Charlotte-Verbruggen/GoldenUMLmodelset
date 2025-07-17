@@ -9,7 +9,7 @@ export function ModelCard({ model }: Readonly<{ model: Model }>) {
     return (
         <Link to={`/model/${encodeURIComponent(model.name)}`}>
             <div className="p-4 bg-white rounded-lg shadow border flex flex-col gap-2 hover:bg-gray-50 transition">
-            <div className="font-bold text-xl text-left mb-1">{model.name}</div>
+            <div className="font-bold text-xl text-left mb-1 break-words max-w-full overflow-x-auto">{model.name}</div>
             <Separator />
             <div className="flex flex-wrap gap-3 items-center mb-2">
                     <span className="flex items-center gap-1 font-semibold text-sm text-gray-700">

@@ -46,8 +46,8 @@ export default function ModelDetails() {
                     &larr; Back
                 </Button>
                 <div className="rounded-xl shadow p-8 flex flex-col gap-6 bg-white">
-                    <div className="flex items-center justify-between gap-4 mb-2">
-                        <h2 className="text-3xl font-bold">{model.name}</h2>
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-2">
+                        <h2 className="text-3xl font-bold break-words max-w-full overflow-x-auto">{model.name}</h2>
                         <a
                             href={`${import.meta.env.BASE_URL}models/${encodeURIComponent(model.name)}.zip`}
                             download

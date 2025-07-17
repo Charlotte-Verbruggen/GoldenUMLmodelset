@@ -53,7 +53,7 @@ export function MultiSelectCombobox({
             <Button
                 variant="outline"
                 role="combobox"
-                className="w-[220px] min-h-[2.4rem] px-2 flex items-center"
+                className="w-full min-h-[2.4rem] px-2 flex items-center"
                 type="button"
             >
                 <div className="flex flex-nowrap items-center gap-1 overflow-hidden min-w-0 flex-1">
