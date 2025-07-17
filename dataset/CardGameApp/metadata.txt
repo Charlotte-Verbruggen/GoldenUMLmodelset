@@ -1,0 +1,7 @@
+name: CardGameApp
+language: English
+tags: 
+domain: Media and Publishing
+source: RWTH
+citation: 
+contact: netz@se-rwth.de
