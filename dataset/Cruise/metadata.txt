@@ -1,7 +1,7 @@
 name: Cruise
 language: English
 tags:
-domain: travel
+domain: Personal Activities
 source: TU Wien, Business Informatics Group
 citation: 
 contact: 
