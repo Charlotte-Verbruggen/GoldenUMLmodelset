@@ -1,0 +1,7 @@
+name: Ebike
+language: English
+tags: 
+domain: Manufacturing
+source: RWTH
+citaiton: 
+contact: netz@se-rwth.de
