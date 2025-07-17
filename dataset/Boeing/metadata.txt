@@ -3,3 +3,5 @@ language: English
 tags:
 domain: Sales
 source:
+citation:
+contact: monique.snoeck@kuleuven.be
