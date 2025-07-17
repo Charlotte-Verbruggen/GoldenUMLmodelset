@@ -4,4 +4,4 @@ tags:
 domain: Financial Services
 source: RWTH
 citation:
-contact:
+contact: netz@se-rwth.de
