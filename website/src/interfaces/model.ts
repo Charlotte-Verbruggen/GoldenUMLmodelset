@@ -8,6 +8,8 @@ export interface Model {
     domain: string[];
     tags: string[];
     source: string;
+    citation?: string;
+    contact?: string;
     // properties
     hasComposition: boolean;
     hasAggregation: boolean;

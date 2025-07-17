@@ -97,6 +97,7 @@ function getModelData(folderPath, folderName) {
 
     const parsed = parsePlantUML(plantumlPath);
     const elements = parsed.at(0).elements;
+    console.log(folderName)
 
     const classCount = elements.filter(e => e instanceof plantUMLParser.Class).length
     const associationCount = elements.filter(e => e instanceof plantUMLParser.Relationship).length

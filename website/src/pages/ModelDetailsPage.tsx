@@ -13,6 +13,7 @@ export default function ModelDetails() {
     const [model, setModel] = useState<Model | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [descOpen, setDescOpen] = useState<boolean>(false);
+    const [citationOpen, setCitationOpen] = useState<boolean>(false);
     
     useEffect(() => {
         const baseUrl = import.meta.env.BASE_URL;
@@ -112,6 +113,12 @@ export default function ModelDetails() {
                             <span className="font-medium">Source:</span> {model.source}
                         </div>
                     )}
+                    {/* Contact */}
+                    {model.contact && model.contact.trim() !== "" && (
+                        <div className="text-xs text-gray-400">
+                            <span className="font-medium">Contact:</span> {model.contact}
+                        </div>
+                    )}
                     <Separator />
                     {/* Description (collapsible) */}
                     {model.description && (
@@ -138,6 +145,32 @@ export default function ModelDetails() {
                                 </div>
                             </CollapsibleContent>
                         </Collapsible>
+                    )}
+                    {/* Citation */}
+                    {model.citation && model.citation.trim() !== "" && (
+                        <Collapsible open={citationOpen} onOpenChange={setCitationOpen}>
+                        <CollapsibleTrigger asChild>
+                            <Button
+                                variant="ghost"
+                                className="mb-2 text-left px-0"
+                                aria-expanded={citationOpen}
+                            >
+                                <span className="font-semibold">
+                                    {citationOpen ? "Hide Citation" : "Show Citation"}
+                                </span>
+                                {citationOpen ? (
+                                    <ChevronUp className="ml-2" size={18} />
+                                ) : (
+                                    <ChevronDown className="ml-2" size={18} />
+                                )}
+                            </Button>
+                        </CollapsibleTrigger>
+                        <CollapsibleContent>
+                            <div className="text-gray-800 whitespace-pre-line px-2 pb-2">
+                                {model.citation}
+                            </div>
+                        </CollapsibleContent>
+                    </Collapsible>
                     )}
                     <Separator />
                     {/* UML Diagram */}
