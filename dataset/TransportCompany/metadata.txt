@@ -1,7 +1,7 @@
 name: TransportCompany
 language: English 
 tags: 
-domain: Business Services
+domain: Logistics
 source: TU Wien, Business Informatics Group
 citation: 
 contact: 
