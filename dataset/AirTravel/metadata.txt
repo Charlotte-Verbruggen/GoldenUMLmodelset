@@ -4,4 +4,4 @@ tags:
 domain: Logistics
 source: TU Wien, Business Informatics Group
 citation:
-contact:
+contact: charlotte.verbruggen@tuwien.ac.at
