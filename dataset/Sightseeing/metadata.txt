@@ -4,4 +4,4 @@ tags:
 domain: Leisure and Recreation 
 source: TU Wien, Business Informatics Group
 citation: 
-contact: 
+contact: charlotte.verbruggen@tuwien.ac.at
