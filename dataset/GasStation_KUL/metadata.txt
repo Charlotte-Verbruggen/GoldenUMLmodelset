@@ -1,0 +1,7 @@
+name: GasStation_KUL
+language: English
+tags:
+domain: Sales
+source: KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp
+citation:
+contact: monique.snoeck@kuleuven.be
