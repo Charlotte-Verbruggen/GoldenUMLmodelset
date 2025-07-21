@@ -1,0 +1,7 @@
+name: AlphaInsurance
+language: English
+tags:
+domain: Insurance
+source: KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp
+citation:
+contact: monique.snoeck@kuleuven.be

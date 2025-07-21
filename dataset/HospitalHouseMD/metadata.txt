@@ -1,0 +1,7 @@
+name: HospitalHouseMD
+language: English
+tags:
+domain: Healthcare
+source: KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp
+citation:
+contact: monique.snoeck@kuleuven.be
