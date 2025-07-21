@@ -1,0 +1,7 @@
+name: HomeForTheElderly
+language: English
+tags:
+domain: Personal Acitivies
+source: KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp
+citation:
+contact: monique.snoeck@kuleuven.be
