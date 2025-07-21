@@ -1,7 +1,0 @@
-name: Louvre
-language: English
-tags:
-domain: Leisure and Recreation
-source: KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp
-citation:
-contact: monique.snoeck@kuleuven.be
