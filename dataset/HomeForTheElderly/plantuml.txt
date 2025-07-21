@@ -1,3 +1,5 @@
+@startuml
+
 class Department {}
 
 class Category {
@@ -49,3 +51,5 @@ Person "1" -- "0..*" Invoice
 Invoice "1" -- "0..*" InvoiceLine
 InvoiceItem "1" - "0..1" InvoiceLine
 Stay "1" -- "0..1*" InvoiceItem
+
+@enduml
