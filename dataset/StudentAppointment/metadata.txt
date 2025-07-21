@@ -1,7 +1,0 @@
-name: StudentAppointment
-language: English
-tags:
-domain: Education
-source: KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp
-citation:
-contact: monique.snoeck@kuleuven.be
