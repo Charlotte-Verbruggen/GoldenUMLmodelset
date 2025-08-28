@@ -1,0 +1,7 @@
+name: Lab Tracker
+language: English
+tags:
+domain: Healthcare
+source: 
+citation: K. Chen, Y. Yang, B. Chen, J. A. Hernández López, G. Mussbacher and D. Varró, "Automated Domain Modeling with Large Language Models: A Comparative Study," 2023 ACM/IEEE 26th International Conference on Model Driven Engineering Languages and Systems (MODELS), Västerås, Sweden, 2023, pp. 162-172, doi: 10.1109/MODELS58315.2023.00037.
+contact: 
