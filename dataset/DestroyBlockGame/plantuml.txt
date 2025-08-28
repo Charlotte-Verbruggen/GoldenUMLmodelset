@@ -18,6 +18,7 @@ class Level {
 class Game {
     string name
     int nrBlocksPerLevel
+    boolean published
 }
 
 class Block {
@@ -36,6 +37,7 @@ class Paddle {
 class Ball {
     int minBallSpeedX
     int minBallSpeedY
+    double ballSpeedIncreaseFactor
 }
 
 class HallOfFameEntry {
@@ -70,31 +72,36 @@ class PlayedBlockAssignment {
 class Player {}
 class Admin {}
 
-DestroyBlock "1" *-- "*" User
-DestroyBlock "1" *-- "*" Game
-DestroyBlock "1" *-- "*" PlayedGame
-DestroyBlock "1" *-- "*" HallOfFameEntry
+DestroyBlock "1" *-- "*" User : users
+DestroyBlock "1" *-- "*" Admin : admins
+DestroyBlock "1" *-- "*" Player : players
+DestroyBlock "1" *-- "*" Game : games
+DestroyBlock "1" *-- "*" PlayedGame : playedGames
+DestroyBlock "1" *-- "*" HallOfFameEntry : entries
 
-Game "1" *-- "*" Block
-Game "1" *-- "1" Paddle
-Game "1" *-- "1" Ball
-Game "1" *-- "1..*" Level
+Game "1" *-- "*" Block : blocks
+Game "1" *-- "1" Paddle : paddle
+Game "1" *-- "1" Ball : ball
+Game "1" *-- "1..99" Level : levels
+Game "1" *-- "*" BlockAssignment : blockAssignments
+Game "1" --> "0..1" HallOfFameEntry : mostRecentEntry
+Game "1" -- "*" PlayedGame : game
 
-Level "1" *-- "*" BlockAssignment
+Level "1" -- "*" BlockAssignment : level
 
-PlayedGame "1" *-- "*" PlayedBlockAssignment
+PlayedGame "1" *-- "*" PlayedBlockAssignment : blocks
 PlayedGame "1" *-- "1" PlayedPaddle
 PlayedGame "1" *-- "1" PlayedBall
 
-Player --|> User
-Admin  --|> User
+Player "1" -- "1" User : player
+Player "1" -- "*" PlayedGame : player
+Player "1" -- "*" HallOfFameEntry : player
+Admin "0..1" -- "1" User : admin
 
-User "1" -- "*" Game : admin
-User "1" -- "*" Game : player
+Admin "1" -- "*" Game : admin
 
 BlockAssignment "*" -- "1" Block
-User "1" -- "*" HallOfFameEntry
 HallOfFameEntry "*" -- "1" Game
-Game "1" -- "*" PlayedGame
-Block "1" -- "*" PlayedBlockAssignment
+
+Block "1" -- "*" PlayedBlockAssignment : block
 @enduml
