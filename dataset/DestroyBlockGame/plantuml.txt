@@ -72,6 +72,7 @@ class PlayedBlockAssignment {
 class Player {}
 class Admin {}
 
+
 DestroyBlock "1" *-- "*" User : users
 DestroyBlock "1" *-- "*" Admin : admins
 DestroyBlock "1" *-- "*" Player : players
