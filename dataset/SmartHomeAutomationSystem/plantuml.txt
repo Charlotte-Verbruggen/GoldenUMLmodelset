@@ -101,7 +101,7 @@ Room "1" *-- "*" Actuator : actuators
 ActivityLog "1" *-- "*" SensorReading : recordedReadings
 ActivityLog "1" *-- "*" ControlCommand : recordedCommands
 
-CommandSequence "*" --> "0..1" CommandSequence : nextCommand
+CommandSequence "*" -- "0..1" CommandSequence : nextCommand
 CommandSequence "1" *-- "0..1" ControlCommand : command
 
 SensorReading "*" -- "1" Sensor : sensor

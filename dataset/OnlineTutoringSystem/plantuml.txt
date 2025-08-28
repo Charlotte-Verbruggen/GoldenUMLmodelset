@@ -1,5 +1,4 @@
 @startuml
-' ===== Enums =====
 enum LevelOfTutoring { 
  PrimarySchool
  HighSchool
@@ -17,7 +16,6 @@ enum PaymentKind {
  WireTransfer
 }
 
-' ===== Classes =====
 class OTS {}
 
 class User {
@@ -64,13 +62,12 @@ class Payment {
     date paymentDate
 }
 
-' ===== Inheritance (per spec) =====
+
 Tutor --|> TutoringRole
 Student --|> TutoringRole
 TutoringRequest --|> TutoringElement
 TutoringOffer --|> TutoringElement
 
-' ===== Containments / Compositions =====
 OTS "1" *-- "*" Subject
 OTS "1" *-- "*" User
 OTS "1" *-- "*" BestTutorAward
@@ -85,17 +82,16 @@ Student "1" *-- "*" TutoringRequest
 TutoringRequest "1" *-- "*" TutoringSession : allSessions
 TutoringSession "1" *-- "0..1" Payment
 
-' ===== Associations (non-owning) =====
 Subject "1" -- "*" TutoringOffer
 Subject "1" -- "*" TutoringRequest
 
-' Offer–Request: an offer may have many requests; each request refers to at most one offer
+
 TutoringOffer "0..1" -- "*" TutoringRequest
 
-' Session chaining
+
 TutoringSession "1" --> "0..1" TutoringSession : nextSession
 TutoringRequest "1" --> "0..1" TutoringSession : firstSession
 
-' Awards given to tutors
+
 Tutor "1" -- "*" BestTutorAward
 @enduml
