@@ -1,0 +1,100 @@
+@startuml
+class DestroyBlock {}
+
+class User {
+    string username
+    string password
+}
+
+class BlockAssignment {
+    int gridHorizontalPosition
+    int gridVerticalPosition
+}
+
+class Level {
+    boolean isRandom
+}
+
+class Game {
+    string name
+    int nrBlocksPerLevel
+}
+
+class Block {
+    int id
+    int red
+    int green
+    int blue
+    int points
+}
+
+class Paddle {
+    int maxPaddleLength
+    int minPaddleLength
+}
+
+class Ball {
+    int minBallSpeedX
+    int minBallSpeedY
+}
+
+class HallOfFameEntry {
+    int score
+}
+
+class PlayedGame {
+    int id
+    int score
+    int lives
+    int currentLevel
+}
+
+class PlayedBall {
+    double ballDirectionX
+    double ballDirectionY
+    double currentBallX
+    double currentBallY
+}
+
+class PlayedPaddle {
+    double currentPaddleLength
+    double currentPaddleX
+    double currentPaddleY
+}
+
+class PlayedBlockAssignment {
+    int x
+    int y
+}
+
+class Player {}
+class Admin {}
+
+DestroyBlock "1" *-- "*" User
+DestroyBlock "1" *-- "*" Game
+DestroyBlock "1" *-- "*" PlayedGame
+DestroyBlock "1" *-- "*" HallOfFameEntry
+
+Game "1" *-- "*" Block
+Game "1" *-- "1" Paddle
+Game "1" *-- "1" Ball
+Game "1" *-- "1..*" Level
+
+Level "1" *-- "*" BlockAssignment
+
+PlayedGame "1" *-- "*" PlayedBlockAssignment
+PlayedGame "1" *-- "1" PlayedPaddle
+PlayedGame "1" *-- "1" PlayedBall
+
+Player --|> User
+Admin  --|> User
+
+User "1" -- "*" Game : admin
+User "1" -- "*" Game : player
+
+BlockAssignment "*" -- "1" Block
+User "1" -- "*" HallOfFameEntry
+HallOfFameEntry "*" -- "1" Game
+Game "1" -- "*" PlayedGame
+Block "1" -- "*" PlayedBlockAssignment
+@enduml
