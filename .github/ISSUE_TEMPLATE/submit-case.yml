@@ -17,7 +17,7 @@ body:
       value: Please upload a file called metadata.txt containing the following information.
   - type: markdown
     attributes:
-      value: "**name** - The name of your case (required)"
+      value: "**name:** The name of your case (required)"
   - type: markdown
     attributes:
-      value: "**language**  - The language used in your case, with the first letter capitalized. For example, *English* (required)"
+      value: "**language:** The language used in your case, with the first letter capitalized. For example, *English* (required)"
