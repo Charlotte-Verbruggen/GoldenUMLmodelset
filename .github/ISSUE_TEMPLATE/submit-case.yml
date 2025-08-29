@@ -3,7 +3,7 @@ description: With this form, you can submit a case for inclusion in the communit
 body:
   - type: markdown
     attributes:
-      value: "With this form, you can submit a case for inclusion in the community-curated Golden UML ModelSet. Your case will be reviewed before it is published online. If you have any questions about the reviewing/publishing process, or issues with this form, you can contact charlotte.verbruggen@tuwien.ac.at. Thank you for contributing to the Golden UML ModelSet!"
+      value: With this form, you can submit a case for inclusion in the community-curated Golden UML ModelSet. Your case will be reviewed before it is published online. If you have any questions about the reviewing/publishing process, or issues with this form, you can contact charlotte.verbruggen@tuwien.ac.at. Thank you for contributing to the Golden UML ModelSet!
   - type: input
     id: contact-for-review
     attributes:
