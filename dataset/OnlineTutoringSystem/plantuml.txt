@@ -16,8 +16,6 @@ enum PaymentKind {
  WireTransfer
 }
 
-class OTS {}
-
 class User {
     string name
     string email
@@ -63,14 +61,10 @@ class Payment {
 }
 
 
-Tutor --|> TutoringRole
-Student --|> TutoringRole
+TutoringRole <|-- Tutor
+TutoringRole <|-- Student
 TutoringRequest --|> TutoringElement
 TutoringOffer --|> TutoringElement
-
-OTS "1" *-- "*" Subject
-OTS "1" *-- "*" User
-OTS "1" *-- "*" BestTutorAward
 
 Tutor "1" *-- "*" TutoringOffer
 Tutor "1" *-- "*" TutorAvailability
