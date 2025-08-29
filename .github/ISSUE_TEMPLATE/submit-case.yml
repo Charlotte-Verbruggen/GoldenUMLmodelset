@@ -17,4 +17,4 @@ body:
       value: Please upload a file called metadata.txt containing the following information.
   - type: markdown
     attributes:
-      value: <ul><li>**name** : The name of your case (required)</li><li>**language** : The language used in your case, with the first letter capitalized. For example, "English" (required)</li><li>**tags** : here you can add tags to your exercise. If you use multiple tags, pleas separate them with a comma (","). (optional)</li><li>**domain** : The domain of your case, use one of the domains listed below (required)</li><li>**source** : This can be a person, organisation, research group, book, ... (optional)</li><li>**citation** : If you case was previously published elsewhere (or will be published in the near future), please add a citation here. (optional)</li><li>**contact** : Public contact information that can be used to reach out to you directly for questions or collaborations (optional)</li></ul>
+      value: **name** : The name of your case (required)
