@@ -52,8 +52,7 @@ body:
         | Environment | Any model related to environmental services, including weather forecasting |
         | Manufacturing | Any model related to product lines and the manufacturing of products, as well as construction of buildings |
         | Personal Activities | Any model related to planned activities undertaken by an individual |
-
- - type: textarea
+  - type: textarea
     id: description
     attributes:
       label: Description
