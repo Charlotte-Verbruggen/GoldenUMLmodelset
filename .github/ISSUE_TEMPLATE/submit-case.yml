@@ -1,6 +1,5 @@
 name: Bug ReportGolden UML ModelSet Submission
 description: "With this form, you can submit a case for inclusion in the community-curated Golden UML ModelSet"
-
 body:
   - type: markdown
     attributes:
@@ -13,7 +12,6 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: true
-
  - type: textarea
     id: metadata
     attributes:
@@ -26,7 +24,6 @@ body:
       **source** : This can be a person, organisation, research group, book, ... (optional)  
       **citation** : If you case was previously published elsewhere (or will be published in the near future), please add a citation here. (optional)  
       **contact** : Public contact information that can be used to reach out to you directly for questions or collaborations (optional)   
-
         | Domain | Domain description |
         | -------- | -------------------- |
         | Social Networks | Any model related to social media and social networks |
@@ -47,7 +44,6 @@ body:
         | Personal Activities | Any model related to planned activities undertaken by an individual |
     validations:
       required: true
-   
  - type: textarea
     id: description
     attributes:
@@ -55,7 +51,6 @@ body:
       description: Please upload a file called "description.md" containing the textual description of the case.
     validations:
       required: true
-  
  - type: textarea
     id: model
     attributes:
@@ -63,7 +58,6 @@ body:
       description: Please upload a file called "plantuml.txt" containing the model in PlantUML format. You can create the plantUML class diagram in the [online editor](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003). You can find the PlantUML documentation [here](https://plantuml.com/class-diagram).
     validations:
       required: true
-
  - type: textarea
     id: extramaterial
     attributes:
