@@ -1,5 +1,4 @@
 @startuml
-class DestroyBlock {}
 
 class User {
     string username
@@ -72,13 +71,6 @@ class PlayedBlockAssignment {
 class Player {}
 class Admin {}
 
-
-DestroyBlock "1" *-- "*" User : users
-DestroyBlock "1" *-- "*" Admin : admins
-DestroyBlock "1" *-- "*" Player : players
-DestroyBlock "1" *-- "*" Game : games
-DestroyBlock "1" *-- "*" PlayedGame : playedGames
-DestroyBlock "1" *-- "*" HallOfFameEntry : entries
 
 Game "1" *-- "*" Block : blocks
 Game "1" *-- "1" Paddle : paddle
