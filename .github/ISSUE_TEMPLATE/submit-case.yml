@@ -12,10 +12,17 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: true
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Metadata
+      description: "Please upload a file called metadata.txt containing the metadata of the case as described below."
+    validations:
+      required: true      
   - type: markdown
     attributes:
       value: |
-        Please upload a file called metadata.txt containing the following information.
+        Please upload a file called metadata.txt containing the following structure.
         
         **name:** The name of your case (required)
         **language:** The language used in your case, with the first letter capitalized. For example, *English* (required)
@@ -45,10 +52,25 @@ body:
         | Environment | Any model related to environmental services, including weather forecasting |
         | Manufacturing | Any model related to product lines and the manufacturing of products, as well as construction of buildings |
         | Personal Activities | Any model related to planned activities undertaken by an individual |
-  - type: textarea
-    id: metadata
+
+ - type: textarea
+    id: description
     attributes:
-      label: Metadata
-      description: "Please upload a file called metadata.txt containing the metadata of the case as described above."
+      label: Description
+      description: "Please upload a file called description.md containing the textual description of the case."
     validations:
       required: true
+ - type: textarea
+    id: model
+    attributes:
+      label: Model
+      description: "Please upload a file called plantuml.txt containing the model in PlantUML format. You can create the plantUML class diagram in the [online editor](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003). You can find the PlantUML documentation [here](https://plantuml.com/class-diagram)."
+    validations:
+      required: true
+ - type: textarea
+    id: extramaterial
+    attributes:
+      label: Extra Material
+      description: "If you have extra material to add, please upload it here."
+    validations:
+      required: false
