@@ -16,6 +16,7 @@ body:
     attributes:
       value: |
         Please upload a file called metadata.txt containing the following information.
+        
         **name:** The name of your case (required)
         **language:** The language used in your case, with the first letter capitalized. For example, *English* (required)
         **tags:** here you can add tags to your exercise. If you use multiple tags, pleas separate them with a comma (","). (optional)
@@ -23,7 +24,9 @@ body:
         **source** : This can be a person, organisation, research group, book, ... (optional)
         **citation** : If you case was previously published elsewhere (or will be published in the near future), please add a citation here. (optional)  
         **contact** : Public contact information that can be used to reach out to you directly for questions or collaborations (optional)   
+        
         accepted values for **domain**:
+        
         | Domain | Domain description |
         | -------- | -------------------- |
         | Social Networks | Any model related to social media and social networks |
