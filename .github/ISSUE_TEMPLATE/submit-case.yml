@@ -1,5 +1,5 @@
-name: Bug ReportGolden UML ModelSet Submission
-description: "With this form, you can submit a case for inclusion in the community-curated Golden UML ModelSet"
+name: Golden UML ModelSet Submission
+description: With this form, you can submit a case for inclusion in the community-curated Golden UML ModelSet
 body:
   - type: markdown
     attributes:
@@ -10,5 +10,15 @@ body:
       label: Contact info for case reviewing and publishing
       description: Please enter the email address(es) we can use during the reviewing and publishing process of your case.
       placeholder: ex. email@example.com
+    validations:
+      required: true
+ - type: markdown
+    attributes:
+      value: "Please upload a file called metadata.txt containing the following information.<ul><li>**name** : The name of your case (required)</li><li>**language** : The language used in your case, with the first letter capitalized. For example, "English" (required)</li><li>**tags** : here you can add tags to your exercise. If you use multiple tags, pleas separate them with a comma (","). (optional)</li><li>**domain** : The domain of your case, use one of the domains listed below (required)</li><li>**source** : This can be a person, organisation, research group, book, ... (optional)</li><li>**citation** : If you case was previously published elsewhere (or will be published in the near future), please add a citation here. (optional)</li><li>**contact** : Public contact information that can be used to reach out to you directly for questions or collaborations (optional)</li></ul>List of accepted values for **domain**: <ul><li>**Social Networks**: Any model related to social media and social networks</li><li>**Business Services**: Any model related to human resources management, building management, tender management, maintenance and repair services, and translation and interpretation services</li><li>**Sales**:  Any model related to sales activities, ticketing and shopping"
+ - type: textarea
+    id: metadata
+    attributes:
+      label: Metadata
+      description: Please upload a file called "metadata.txt" containing the information as described above.
     validations:
       required: true
