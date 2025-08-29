@@ -12,3 +12,6 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: "lease upload a file called metadata.txt containing the following information."
