@@ -12,10 +12,3 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: true
- - type: textarea
-    id: metadata
-    attributes:
-      label: Metadata
-      description: Please upload a file called "metadata.txt" containing the information as described above.
-    validations:
-      required: true
