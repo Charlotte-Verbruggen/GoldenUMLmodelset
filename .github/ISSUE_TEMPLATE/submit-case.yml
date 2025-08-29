@@ -1,5 +1,5 @@
-name: Golden UML ModelSet Submission
-description: With this form, you can submit a case for inclusion in the community-curated Golden UML ModelSet
+name: "Golden UML ModelSet Submission"
+description: "With this form, you can submit a case for inclusion in the community-curated Golden UML ModelSet"
 
 body:
   - type: markdown
