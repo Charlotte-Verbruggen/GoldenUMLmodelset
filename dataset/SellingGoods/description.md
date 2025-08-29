@@ -1,6 +1,6 @@
 This exercise teaches you to build and re-evaluate your solution in an iterative manner to handle changing requirements.
-First, create an EDG for the use case described in STEP 1, and add attributes, event types, non-default FSMs and constraints if necessary. For each step, revise your model and add, remove or change elments where necessary.
--------------------------------------------------------------------------------------------------
+First, create a class diagram for the use case described in STEP 1, and add attributes, event types, non-default FSMs and constraints if necessary. For each step, revise your model and add, remove or change elments where necessary.
+
 STEP 1
 Your brand new company sells goods to local supermarkets. You want to create a simple information system to keep track of your stock, your customers and their orders.
 
