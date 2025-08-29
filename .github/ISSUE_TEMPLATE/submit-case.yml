@@ -25,10 +25,10 @@ body:
         **citation** : If you case was previously published elsewhere (or will be published in the near future), please add a citation here. (optional)  
         **contact** : Public contact information that can be used to reach out to you directly for questions or collaborations (optional)   
         
-        accepted values for **domain**:
+        Accepted values for **domain**:
         
         | Domain | Domain description |
-        | -------- | -------------------- |
+        | :------------------- | :-------------------- |
         | Social Networks | Any model related to social media and social networks |
         | Business Services | Any model related to human resources management, building management, tender management, maintenance and repair services, and translation and interpretation services |
         | Sales | Any model related to sales activities, ticketing and shopping |
