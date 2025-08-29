@@ -56,20 +56,20 @@ class Player {
 }
 
 WinTile --|> Tile
-ActionTile --|> Tile
-NormalTile --|> Tile
+Tile <|-- ActionTile
+Tile <|-- NormalTile
 
-RollDieActionCard --|> ActionCard
-ConnectTilesActionCard --|> ActionCard
-RemoveConnectionActionCard --|> ActionCard
-TeleportActionCard --|> ActionCard
-LoseTurnActionCard --|> ActionCard
+ActionCard <|-- RollDieActionCard
+ActionCard <|-- ConnectTilesActionCard
+ActionCard <|-- RemoveConnectionActionCard
+ActionCard <|-- TeleportActionCard 
+ActionCard <|-- LoseTurnActionCard 
 
 TileO "1" *-- "*" Game : games
 Game  "1" *-- "*" Tile : tiles
 Game  "1" *-- "*" Connection : connections
 Game  "1" *-- "1" Die : die
-Game  "1" *-- "1" Deck : deck
+Game  "1" *- "1" Deck : deck
 Game  "1" --> "0..1" Player : currentPlayer
 Game  "1" *-- "2..4" Player : players
 Deck  "1" *-- "0..32" ActionCard : cards
