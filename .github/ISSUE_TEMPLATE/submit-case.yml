@@ -13,12 +13,19 @@ body:
     validations:
       required: true
   - type: textarea
+    id: publicationPermission
+    attributes:
+      label: Publication Permission
+      description: "If you case was previously published elsewhere, please upload the written permission from the original authors (and publisher if applicable) to publish the case as part of the Golden UML ModelSet."
+    validations:
+      required: false
+  - type: textarea
     id: metadata
     attributes:
       label: Metadata
       description: "Please upload a file called metadata.txt containing the metadata of the case as described below."
     validations:
-      required: true      
+      required: true
   - type: markdown
     attributes:
       value: |
