@@ -1,7 +1,7 @@
 name: Sober
 language: English 
 tags: 
-domain: Personal Activities
+domain: Logistics
 source: KU Leuven, LIRIS - Handbook Principles of Database Management
 citation: Lemahieu, W., vanden Broucke, S., & Baesens, B. (2018). Principles of Database Management: The Practical Guide to Storing, Managing and Analyzing Big and Small Data. Cambridge: Cambridge University Press. 
 contact:
