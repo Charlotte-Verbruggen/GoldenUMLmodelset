@@ -21,3 +21,9 @@ body:
   - type: markdown
     attributes:
       value: "**language:** The language used in your case, with the first letter capitalized. For example, *English* (required)"
+  - type: markdown
+    attributes:
+      value: "**tags:** here you can add tags to your exercise. | If you use multiple tags, pleas separate them with a comma (","). (optional)"
+  - type: markdown
+    attributes:
+      value: "**domain:** The domain of your case, use one of the domains listed below (required)"
