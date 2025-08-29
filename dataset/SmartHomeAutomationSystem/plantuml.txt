@@ -1,5 +1,5 @@
 @startuml
-class SHAS {}
+
 
 class SmartHome {}
 
@@ -81,19 +81,16 @@ enum BinaryOp {
 
 Sensor --|> Device
 Actuator --|> Device
-SensorReading --|> RuntimeElement
-ControlCommand --|> RuntimeElement
-RelationalTerm --|> BooleanExpression
-NotExpression --|> BooleanExpression
-BinaryExpression --|> BooleanExpression
-
-SHAS "1" *-- "*" SmartHome : smartHome
-SHAS "1" *-- "*" User : users
+RuntimeElement <|-- SensorReading
+RuntimeElement <|-- ControlCommand
+BooleanExpression <|-- RelationalTerm
+BooleanExpression <|-- NotExpression
+BooleanExpression <|-- BinaryExpression
 
 SmartHome "1" *-- "0..1" Address : address
 SmartHome "1" *-- "*" Room : rooms
 SmartHome "1" *-- "0..1" ActivityLog : log
-SmartHome "*" -- "*" User : owners
+User "*" -- "*" SmartHome : owners
 
 Room "1" *-- "*" Sensor : sensors
 Room "1" *-- "*" Actuator : actuators
