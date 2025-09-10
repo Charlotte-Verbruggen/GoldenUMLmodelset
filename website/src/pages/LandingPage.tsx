@@ -27,16 +27,16 @@ export default function LandingPage() {
                     The dataset fosters a shared resource for the modelling community that supports reproducibility, benchmarking, and pedagogical excellence.
                 </p>
                 <p className="text-base text-gray-700 mb-6 text-center">
-                    Currently there are <span className="font-bold">{models.length} total cases</span> available. This website and the GitHub repository contain the most recent version of the dataset. Additionally, copies of the dataset are provided on <Link to="https://huggingface.co/datasets/CharlotteVerbruggen/GoldenUMLmodelset" style={{ color: '#00F' }} >HuggingFace</Link> and <a href="https://zenodo.org/records/16985872">Zenodo</a> that are updated at regular intervals.
+                    Currently there are <span className="font-bold">{models.length} total cases</span> available. This website and the GitHub repository contain the most recent version of the dataset. Additionally, copies of the dataset are provided on <Link to="https://huggingface.co/datasets/CharlotteVerbruggen/GoldenUMLmodelset">HuggingFace</Link> and <Link to="https://zenodo.org/records/16985872">Zenodo</Link> that are updated at regular intervals.
                 </p>
                 <p className="text-base text-gray-700 mb-6 text-center">
-                    Community members that are interested to contribute can submit new cases via GitHub or the form (linked above), or can <a href="mailto:charlotte.verbruggen@tuwien.ac.at">send an email</a> to indicate their interest to review submitted cases for the dataset.
+                    Community members that are interested to contribute can submit new cases via GitHub or the form (linked above), or can <Link to="mailto:charlotte.verbruggen@tuwien.ac.at">send an email</Link> to indicate their interest to review submitted cases for the dataset.
                 </p>
                 <p className="text-base text-gray-700 mb-6 text-center">
                     More information about the construction of the dataset can be found in the accompanying paper:
                 </p>
                 <p className="text-base text-gray-700 mb-6 text-center">
-                    Charlotte Verbruggen, Lukas Netz, Philipp-Lorenz Glaser, Marion Scholz, Christian Huemer, Marco Calamo, Bernhard Rumpe, Monique Snoeck and Dominik Bork (2025). Toward a Community-Curated Golden Dataset of UML Models. In <i>MODELS 2025 Educator Symposium - Int. Conf. on Model Driven Engineering Languages and Systems</i>. <a href="https://model-engineering.info/publications/papers/MODELS25-GoldenUMLDataset.pdf">link</a>
+                    Charlotte Verbruggen, Lukas Netz, Philipp-Lorenz Glaser, Marion Scholz, Christian Huemer, Marco Calamo, Bernhard Rumpe, Monique Snoeck and Dominik Bork (2025). Toward a Community-Curated Golden Dataset of UML Models. In <em>MODELS 2025 Educator Symposium - Int. Conf. on Model Driven Engineering Languages and Systems</em>. <Link to="https://model-engineering.info/publications/papers/MODELS25-GoldenUMLDataset.pdf">link</Link>
                 </p>
                 <div className="flex flex-row">
                     <Button asChild className="mr-2">
