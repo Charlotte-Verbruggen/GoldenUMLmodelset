@@ -27,7 +27,7 @@ export default function LandingPage() {
                     The dataset fosters a shared resource for the modelling community that supports reproducibility, benchmarking, and pedagogical excellence.
                 </p>
                 <p className="text-base text-gray-700 mb-6 text-center">
-                    Currently there are <span className="font-bold">{models.length} total cases</span> available. This website and the GitHub repository contain the most recent version of the dataset. Additionally, copies of the dataset are provided on <a href="https://huggingface.co/datasets/CharlotteVerbruggen/GoldenUMLmodelset">HuggingFace</a> and <a href="https://zenodo.org/records/16985872">Zenodo</a> that are updated at regular intervals.
+                    Currently there are <span className="font-bold">{models.length} total cases</span> available. This website and the GitHub repository contain the most recent version of the dataset. Additionally, copies of the dataset are provided on <a href="https://huggingface.co/datasets/CharlotteVerbruggen/GoldenUMLmodelset" style="color:blue">HuggingFace</a> and <a href="https://zenodo.org/records/16985872">Zenodo</a> that are updated at regular intervals.
                 </p>
                 <p className="text-base text-gray-700 mb-6 text-center">
                     Community members that are interested to contribute can submit new cases via GitHub or the form (linked above), or can <a href="mailto:charlotte.verbruggen@tuwien.ac.at">send an email</a> to indicate their interest to review submitted cases for the dataset.
