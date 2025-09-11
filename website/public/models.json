@@ -16,16 +16,41 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "travel"
+      "Logistics"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
+  },
+  {
+    "name": "AlphaInsurance",
+    "description": "Alpha Insurance is an insurance company that provides its clients with various types of insurance policies. \r\nAs soon as a customer addresses Alpha Insurance, a broker is assigned to follow the customer’s file. The broker is registered in the system, so that when a customer calls, based on the contract, the help desk can immediately trace who is the customer's first account manager. After the broker is assigned to the customer, the latter indicates which type(s) of insurance policy they would like to sign for, so the broker could, depending on the case, either assess the customer’s profile on the spot or send the customer’s file for analysis to the head office. After the customer’s profile has been assessed and the customer has been deemed trustworthy , a preliminary contract/offer on an insurance product is made to the customer either in person or by email. (Such offers can also be extended to already existing customers.) If the customer agrees to the offer, the contract is signed by both parties. After the signing of the contract, the client enjoys the coverage and is invoiced (monthly or yearly – depending on the choice made in the contract) according to the price of the insurance product they bought.\r\nIn case the insured event happens, a customer should send a claim for compensation. Then the company opens one or several claim cases (e.g. in case of an accident, often material damage & physical damage are handled separately). Once the case file is complete, it is sent for assessment by different estimators based on their area of expertise. According to the reports issued by the estimators, it is decided whether the claim case is approved. In case of approval the compensation decision is registered that stipulates which costs are eligible for (partial) refund.  For the supplied documents, the sum of compensation is calculated and the compensation is paid to the customer’s account.  The estimators’ reports must be stored in the database for at least one year after the payment of compensation for legal purposes.",
+    "classCount": 10,
+    "associationCount": 10,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": true,
+    "hasMethods": true,
+    "hasAssociationClass": true,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Insurance"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
   },
   {
     "name": "BankAccount",
     "description": "The following description of a bank is given. Create a suitable class diagram from the given informal description.\nA bank manages any number of customers. The first name and last name of type String are stored for each customer. A bank consists of any number of branches. A customer has at least one and at most five accounts. Each account has an owner who is a customer of the bank. There are two basic types of accounts: Current accounts and savings accounts. Each account has an account number of type int and a current account balance of type double. Current accounts also have an overdraft limit of type double.\n",
     "classCount": 6,
     "associationCount": 5,
-    "hasExtraMaterial": false,
+    "hasExtraMaterial": true,
     "hasComposition": false,
     "hasAggregation": true,
     "hasInheritance": true,
@@ -37,9 +62,11 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "cinema planning and ticket sales"
+      "Financial Services"
     ],
-    "source": "RWTH"
+    "source": "RWTH",
+    "citation": "",
+    "contact": "netz@se-rwth.de"
   },
   {
     "name": "Boeing",
@@ -58,16 +85,18 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "Airplane Sales"
+      "Sales"
     ],
-    "source": ""
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
   },
   {
     "name": "BuildingManagement",
     "description": "Project description:\nEach web portal has a version number and a URL address such as “http://www.ebuntu-nrw.org” and provides a catalog of buildings with their energy information. A building has a unique ID, a name, an energy class (A, B, C, D), an address, a year of construction and is assigned to a user as the owner, who can add additional entries to the buildings. Each additional entry has a name. An entry can be either textual information or a floating point number with an additional unit (the latter as freely definable text). The owner can optionally release each of these additional entries publicly, i.e. also for all non-registered visitors to the respective web portal. In addition, each building has a number of images, one of which is used as a profile photo. Images are saved with a file name.\nVisitors can register with a web portal as a user with a unique user name, their email address and a password. During registration, the system checks the user name for uniqueness and the correct email address by sending a confirmation link. In the meantime, the user is set up for the web portal by an administrator. Once these processes have been completed, users are automatically informed by email that they have been activated and can log in accordingly. After logging in, users can create buildings, manage entries for their buildings and comment on other users' buildings. All visitors to the site can search for corresponding buildings in the system using a full-text search. Administrators are special users. Their ID card number is stored in addition to their user information. The administrative functions include setting up user accounts and deleting comments. \n\nCreate a UML use case diagram based on the project description. Assign the use cases to the corresponding actors. For the evaluation of the task, 10 meaningful use cases are sufficient. Use the concepts of generalization and, if possible, model meaningful relationships between the individual use cases.\n",
     "classCount": 10,
     "associationCount": 11,
-    "hasExtraMaterial": false,
+    "hasExtraMaterial": true,
     "hasComposition": true,
     "hasAggregation": false,
     "hasInheritance": true,
@@ -75,14 +104,22 @@
     "hasEnumeration": true,
     "hasAttributes": true,
     "hasMethods": false,
-    "hasAssociationClass": false
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Business Services"
+    ],
+    "source": "RWTH",
+    "citation": "",
+    "contact": "netz@se-rwth.de"
   },
   {
     "name": "CardGameApp",
     "description": "You are in the process of designing a card game app for German clubs. You are thinking about the data structure of the system in more detail. You have been given the following specification of the system by the customer:\nA game consists of 4 players, a deck of cards and a scoring table. A deck consists of up to 48 cards. Cards have a comparison method for card height, which can return lower, equal or higher. The suits of the cards are diamonds, hearts, spades and clubs.\nThe scoring table consists of any number of rounds, with each round containing the winning players and the point value. A round can be both a jack round and a solo round. In addition, mandatory solo rounds are a special case of solo rounds. Solo rounds have one type of solo, which can be a trump, jack or queen solo. In addition, solo rounds have exactly one solo player.\nEach object has a unique ID attribute, which ensures that it can be found.\n",
     "classCount": 10,
     "associationCount": 13,
-    "hasExtraMaterial": false,
+    "hasExtraMaterial": true,
     "hasComposition": false,
     "hasAggregation": false,
     "hasInheritance": true,
@@ -90,7 +127,15 @@
     "hasEnumeration": true,
     "hasAttributes": true,
     "hasMethods": true,
-    "hasAssociationClass": false
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Media and Publishing"
+    ],
+    "source": "RWTH",
+    "citation": "",
+    "contact": "netz@se-rwth.de"
   },
   {
     "name": "ClothingCompany",
@@ -111,7 +156,9 @@
     "domain": [
       "Sales"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
   },
   {
     "name": "Cruise",
@@ -130,9 +177,11 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "travel"
+      "Leisure and Recreation"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
   },
   {
     "name": "EUScienceConnect",
@@ -150,8 +199,10 @@
     "hasAssociationClass": true,
     "language": "English",
     "tags": [],
-    "domain": [],
-    "source": "KU Leuven, LIRIS",
+    "domain": [
+      "Research"
+    ],
+    "source": "KU Leuven, LIRIS - Handbook Principles of Database Management",
     "citation": "Lemahieu, W., vanden Broucke, S., & Baesens, B. (2018). Principles of Database Management: The Practical Guide to Storing, Managing and Analyzing Big and Small Data. Cambridge: Cambridge University Press.",
     "contact": ""
   },
@@ -160,7 +211,7 @@
     "description": "Generate a class diagram of an EBike according to these specifications:\r\nThe EBike is composed of a frame (made out of steel), a drive system, and a controller.\r\nTwo wheels are inserted into each frame. The drive system is composed of a motor.\r\nEach EBike can be connected to a removable battery. The battery has a stored energy\r\nmeasured in Watt-hours (Wh). The controller can be in one of three states: On, Off, and\r\nCharging. It also controls the battery, if one is connected, and commands the drive\r\nsystem. The company plans two different variants of the controller, a basic controller,\r\nand an advanced controller. The advanced controller should be able to estimate the\r\nnext Date the bike should be inspected for maintenance.\r\n",
     "classCount": 9,
     "associationCount": 10,
-    "hasExtraMaterial": false,
+    "hasExtraMaterial": true,
     "hasComposition": false,
     "hasAggregation": false,
     "hasInheritance": true,
@@ -168,7 +219,15 @@
     "hasEnumeration": true,
     "hasAttributes": true,
     "hasMethods": true,
-    "hasAssociationClass": false
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Manufacturing"
+    ],
+    "source": "RWTH",
+    "citaiton": "",
+    "contact": "netz@se-rwth.de"
   },
   {
     "name": "Facepage",
@@ -186,8 +245,10 @@
     "hasAssociationClass": true,
     "language": "English",
     "tags": [],
-    "domain": [],
-    "source": "KU Leuven, LIRIS",
+    "domain": [
+      "Network and Communication Systems"
+    ],
+    "source": "KU Leuven, LIRIS - Handbook Principles of Database Management",
     "citation": "Lemahieu, W., vanden Broucke, S., & Baesens, B. (2018). Principles of Database Management: The Practical Guide to Storing, Managing and Analyzing Big and Small Data. Cambridge: Cambridge University Press.",
     "contact": ""
   },
@@ -208,9 +269,11 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "Film industry"
+      "Media and Publishing"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
   },
   {
     "name": "FitnessCompanyConan",
@@ -228,8 +291,10 @@
     "hasAssociationClass": false,
     "language": "English",
     "tags": [],
-    "domain": [],
-    "source": "KU Leuven, LIRIS",
+    "domain": [
+      "Personal Activities"
+    ],
+    "source": "KU Leuven, LIRIS - Handbook Principles of Database Management",
     "citation": "Lemahieu, W., vanden Broucke, S., & Baesens, B. (2018). Principles of Database Management: The Practical Guide to Storing, Managing and Analyzing Big and Small Data. Cambridge: Cambridge University Press.",
     "contact": ""
   },
@@ -238,7 +303,7 @@
     "description": "Formalize the following textual description of a game area by creating a suitable class diagram. Use at least one role name and at least one association name. (You do not need to model setters and getters).\nA game area has a name of type String. A game area consists of at least one game element and one or two game pieces. A game element has an x value of type protected long and a y value of type private long, which determine its position in the game area. Game elements are either shapes, objects or opponents. Shapes can be connected to any number of other shapes. Exactly one opponent is known to the game area as the so-called boss. Enemies have a number of lives of type protected int and can be killed. \n\nWrite down the classes game element, shape, object and opponent from their class diagram as well as their relationships in the textual syntax for class diagrams that you have become familiar with using the DEX tool. Ignore the visibilities.\n",
     "classCount": 6,
     "associationCount": 7,
-    "hasExtraMaterial": false,
+    "hasExtraMaterial": true,
     "hasComposition": false,
     "hasAggregation": true,
     "hasInheritance": true,
@@ -252,12 +317,39 @@
       "game",
       "boardgame"
     ],
-    "domain": [],
-    "source": "RWTH SWTExamWS1415"
+    "domain": [
+      "Media and Publishing"
+    ],
+    "source": "RWTH SWTExamWS1415",
+    "citation": "",
+    "contact": "netz@se-rwth.de"
   },
   {
-    "name": "GasStation",
-    "description": "A gas station chain wants to manage its gas stations electronically in the future. Model the following situation using a UML class diagram based on the following information:\r\nEach gas station has a unique ID and an address. It also has a number of fuel pumps (maximum 12), each of which is identified by a number. It is also noted whether or not it is a self-service fuel pump. For each fuel pump, it is known which fuels are offered at it. A fuel is uniquely identified by its name, and its octane rating is also noted.\r\nEach gas station archives all daily fuel prices. A daily price is identified by a date, the fuel to which it applies, and the gas station. The price per liter is also noted. A fuel purchase is uniquely identified by an ID, and it is noted at which fuel pump the fuel was purchased and which fuel was purchased at which daily price. In addition, the number of liters of fuel dispensed is also stored.",
+    "name": "GasStation_KUL",
+    "description": "An oil company possesses a number of gas stations spread across the country. Customers can pay their refuel turn in cash at the counter or with a personal credit card, but they can also ask for a refuel card.  When using their refuel card, customers do not pay the refuel turn immediately. Rather, at the end of each month, the holder of the fuel card receives a monthly invoice with the amounts of all the refuel turns paid with the fuel card.  On the monthly invoice discounts are given depending on the turnover of the customer during the invoiced month.  Invoicing and paying occurs in any order: one can already receive a second invoice before having paid the first one.  But obviously, each invoice must first have been sent before a payment can be received. Each refuel turn only appears on the invoice of the month of the refuel turn. If a customer doesn't pay the invoice, the unpaid refuel turns are not added to the next month’s invoice. Instead, the invoice is simply sent again to the customer to remind him/her of the payment due. If a customer repeatedly does not pay the invoices (e.g. two months in a row), then the customer is suspended and his/her card is blocked until the bills have been paid.  The exact threshold to block a customer is not 100% fixed: very good customers are given a bit more slack than new customers.  If the bills are settled, a customer may return to the normal state.\nEach gas station has a number of pumps that each contain a particular type of gasoline. Obviously only one customer can refuel his/her car at a time at a given pump. When the nozzle is taken, the refueling can start. When the nozzle is put back the refueling is stopped. Between those two moment, no other customer can use this pump. As soon as the nozzle is put back, the pump becomes available for the next customer.\nEach pump has a separate reservoir that must be refilled when the quantity of gasoline drops below a certain preset reordering level.  Refilling can occur at any time.  The system should produce a daily report indicating which pump needs to be refilled and for each pump the current level of gasoline and the quantity to order. As the bottom of a tank can contain dirt, when the fuel drops below a critical level, the pump is automatically blocked so that no refueling can occur with this pump. For the same reason, when refilling a tank that was still above the critical level, the pump is temporarily blocked by the gas station responsible for approximatively an hour, so that dirt can sink to the bottom. The pump is released when the gas station responsible deems that refueling with this pump is safe again.",
+    "classCount": 7,
+    "associationCount": 7,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": true,
+    "hasMethods": false,
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Sales"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
+  },
+  {
+    "name": "GasStation_TUW",
+    "description": "A gas station chain wants to manage its gas stations electronically in the future. Model the following situation using a UML class diagram based on the following information:\r\nEach gas station has a unique ID and an address. It also has a number of fuel pumps (maximum 12), each of which is identified by a number. It is also noted whether or not it is a self-service fuel pump. For each fuel pump, it is known which fuels are offered at it. A fuel is uniquely identified by its name, and its octane rating is also noted.\r\nEach gas station archives all daily fuel prices. A daily price is identified by a date, the fuel to which it applies, and the gas station. The price per liter is also noted. A fuel purchase is uniquely identified by an ID, and it is noted at which fuel pump the fuel was purchased and which fuel was purchased at which daily price. In addition, the number of liters of fuel dispensed is also stored.\r\n",
     "classCount": 5,
     "associationCount": 6,
     "hasExtraMaterial": false,
@@ -272,9 +364,57 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "Service provider"
+      "Sales"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
+  },
+  {
+    "name": "HomeForTheElderly",
+    "description": "A Home for the elderly is divided in departments.  Each department consists of a number of rooms and each room has a number of beds.  Each inhabitant is assigned a bed for his/her stay.  A bed belongs to a particular category.  Each category has a price.  The home offers different types of stays (=category): rest home (RH), rest & nursing home (RNH), service flat (SF).  An inhabitant can do more than one stay at a time. Suppose John stays in a service flat but breaks his leg and therefore has to stay in rest&nursing for a while. His stay in the service flat will then be suspended but not ended. The switch to rest&nursing doesn't require a proposal either as John is already an inhabitant.\nPeople wishing to reside in the home go through a registration process.  This registration process involves answering a set of questions concerning the person's basic identification data. As a final step, the data of the person is registered in the system. Once the basic registration is done, the abilities of a person are assessed by means of questions that gauge the person's needs for help for basic activities such as eating, dressing, personal care (like taking a shower), as this will give an indication of the type of stay best suited for that person. The assessment results in a type of stay defined for the person. As soon as a person has been assessed, the person is considered to be on the waiting list for the corresponding type of stay. The position on the waiting list is determined by the registration date only. When a bed of the corresponding category is free, it is proposed to the person that is on the highest position of the waiting list. The person needs then to inform the Rest & Nursing Home within three days about whether s/he accepts or refuses the proposal. If the proposal is refused, the person stays on the waiting list and a new proposal is made to the next person on the list who requested this type of stay, ... and so on until a person accepts the proposal.  Once a proposal is accepted, the person's abilities are re-assessed such as to validate the requested type of stay. After this validation, the date of intake is determined and the effective stay will start on that day.  In case the type of stay needs to be changed after the re-assessment, the proposal is marked as invalidated, and the requested type of stay is updated, but the person remains in the same position on the waiting list.\nStays are invoiced once a month. For the sake of simplicity, payments will not be treated as objects, but as events. When a payment is received, this is registered and the outstanding amount of the invoice is reduced with the amount paid.  If the remaining amount is zero, the invoice is registered as \"paid\". If the remaining amount is still positive (paid amount too low), then the outstanding amount is adjusted, and the invoice is re-sent, indicating the remaining amount to pay.  If a person pays too much, the following actions are undertaken: the outstanding amount is set to zero, invoice is registered as paid and a credit note is created and the refund is executed immediately.  As long as an invoice is not registered as paid, it can be modified: if the inhabitant or his/her representative complains about the items that have been invoiced, this can be corrected.\nWhen a stay comes to an end (because of the inhabitant's death or because this person decides to move to another place), the invoicing processes will continue until all invoices are paid.  The type of the stay will determine the amount that is invoiced.  In case e.g. a service flat stay goes on while an inhabitant resides in rest & nursing for a while, both stays will be invoiced, but a discount will apply to the service flat stay.",
+    "classCount": 10,
+    "associationCount": 11,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": true,
+    "hasMethods": true,
+    "hasAssociationClass": true,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Personal Acitivies"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
+  },
+  {
+    "name": "HospitalHouseMD",
+    "description": "HospitalHouseMD is a hospital that accepts patients with rare, and often unexplainable symptoms. Patients are assigned one or more doctors, which try to make a diagnosis for the sick patient. For each illness HospitalHouseMD has a database with all possible treatments. These treatments can be applied to any diagnosis and are accordingly executed. To keep everything under control, the head doctor has to approve the diagnosis made by another doctor before any treatment can happen.  A treatment can go through three stages.  The first stage is the weakest treatment. In this stage, no consent is necessary by the patient, and treatment can start immediately. When this doesn’t work, treatment needs to move to stage 2 or even directly to stage 3, according to the rules described below. To move the treatment from stage 1 to another stage, consent is needed by the patient. The patient needs to sign a form indicating his/her consent to move his/her treatments to a higher stage. Once this consent has been given, any applied treatment for that patient can be moved to a higher stage, without the need to ask consent again. So, once a consent is signed by the patient, all treatments can freely upgrade from stage 1 to 2 and 3, until the patient retracts his/her consent. Patients with a treatment in stage 3 require a higher follow-up rate and will be checked more often by nurses and doctors. Once the higher follow-up rate isn’t needed anymore for a specific treatment for a patient, the treatment can downgrade again to lower stages (downgrading is the responsibility of the doctor).\nIllnesses also get a priority score, this is necessary to prevent any outbreaks from e.g. unknown viruses. The priority score of an illness can change at any given time. For now HospitalHouseMD only has two priority scores: high and low. When an illness gets priority score high, all applied treatments for that illness are immediately placed into stage 3, by means of a priority stage upgrade. No consent of the patients are needed to move the treatment to stage 3 when the priority score of the illness is high.",
+    "classCount": 6,
+    "associationCount": 6,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": true,
+    "hasMethods": true,
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Healthcare"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
   },
   {
     "name": "House",
@@ -293,9 +433,11 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "Construction"
+      "Manufacturing"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
   },
   {
     "name": "Kinepolis",
@@ -314,15 +456,63 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "cinema planning and ticket sales"
+      "Sales"
     ],
-    "source": ""
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
+  },
+  {
+    "name": "Louvre",
+    "description": "The Louvre Museum in Paris is a huge museum with quite a large number of rooms, so that many exhibitions can be organised in parallel in the Museum. Also, the planning phase of an exhibition starts at least two years before the actual opening date of an exhibition, so that even for a single room, several exhibitions in different stages of advancement need to be followed up simultaneously. Therefore, a little management system is required to make sure all these exhibitions run smoothly.\nThe museum has identified a set of locations inside the museum that can hold exhibitions. The locations can be considered as museums inside the museum, spanning e.g a part of or an entire floor or wing. So, for each location a series of exhibitions is developed. \nEach exhibition is assigned an employee of the museum as coordinator. First a series of desired exhibition items is defined. For example, for an exhibition on Vincent Van Gogh, it is defined that one item of his early period is desired, one pencil drawing with the corresponding painting, one sunflower painting, etc. For each desired item, a suitable piece is sourced from the collectors that possess candidate pieces. For some items, only one unique piece is available, but some exhibition items several potential pieces are available from different collectors. (There are for example several \"Sunflower\" paintings from Vincent Van Gogh).  For each exhibition item, the system will keep track of what pieces are requested from which collector. \nTo foster knowledge transfer, junior employees are assigned a senior employee as coach. This \"coaching\" relationship between employees is also tracked by the system.\n",
+    "classCount": 7,
+    "associationCount": 7,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": true,
+    "hasMethods": false,
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Leisure and Recreation"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
+  },
+  {
+    "name": "Menso",
+    "description": "Flander's bus company \"De Lijn\" has a number of busses which are used for different bus lines with different destinations. The company possesses a number of trajectories which have to be approved by town authorities.  When the company asks for approval, that approval may be refused without appeal or town authorities may ask the bus company to change the trajectory upon which the company may ask again for approval.  This procedure may be repeated a number of times.  When approval is given, the trajectory is included in the business of the company to become operational at the beginning of the next calendar year.  From that time on, busses can be assigned to the trajectory.  The trajectory may be suspended for some time for all kinds of reasons.  At a certain moment in time, the trajectory is cancelled.  \nBuses get a 'line' number. A 'Line' is mostly the same as a trajectory, but not entirely. For the sake of this case, we assume that a line groups a number of overlapping trajectories. E.g., in the late evening, the last section of a line may be skipped (trajectory is shorter), or there is a bifurcation with two different end points at one end, which are taken alternatively. E.g. in Leuven, one has \"Line 2 Campus\" and \"Line 2 Boskant\" which follow partly the same and partly different routes.\nBus company \"De Lijn\" wishes to test a new type of season ticket, called MENSO.  For the purpose of the MENSO project, all bus lines have been assigned a category.  A MENSO ticket is valid during one year and the price of a trip depends of the category of line you are travelling with.  As a result, the price of the ticket is not known in advance and MENSO users will be invoiced at the end of each month for the trips of the past month.  \nIn order to pay with a trip with MENSO, the user simply introduces his/her card in the ticket machine next to the bus door upon entering the bus.  The system will then register time, date and line of the trip.  If the user has forgotten his/her menso-card, (s)he has to pay in the usual way: by buying a ticket of using another type of card.\nThe time, date and line information is collected in order to generate the monthly invoices. Depending on the total invoice amount, the customer will be granted a discount of up to 20%.  Invoicing and payment happens in any order: a customer might receive the next invoice before the first one is paid.\nThrough the MENSO system, \"De Lijn\" hopes to gather interesting information on the behaviour of his customers.  When subscribing to MENSO, the customer will be requested some personal data such as home address, office address and working hours.  By combining this information with the information generated by using the MENSO card, De Lijn hopes to detect patterns in travelling habits, allowing to optimise the routes and frequency of the bus lines.\n",
+    "classCount": 11,
+    "associationCount": 11,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": true,
+    "hasMethods": false,
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Sales"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
   },
   {
     "name": "Musicmatic",
     "description": "Attracted by the success of Spotify, a group of students wants to build its own music streaming website called Musicmatic. Being economists, they are unaware of the specificities of databases and have therefore asked you to create a UML class diagram.\r\nA large number of songs will be made available through their website, and the following information on each song needs to be stored: title, year, length, and genre. Also, artist information will be added, including date of birth, name and a URL to a website (e.g., Wikipedia page) with additional information on the artist. You can assume an artist is uniquely identified by his/her name, and that a song always belongs to exactly one artist. The Musicmatic students also point out that songs having the same title are possible, and only the combination of song and artist can be assumed to be unique.\r\nThe database will also have to store information on the people using Musicmatic. It was decided to only discriminate between two types of users: the regular users who will be able to buy music, and the business users who will deliver the content (upload the music). The following information is recorded on each user: (unique) ID, name, and address. Business users will also have a VAT number. The students want to offer a flexible service, and decided business users can only upload individual songs. These songs are classified either as singles or hits, and regular users can directly buy the singles. Otherwise, people can compose an album consisting of multiple hits (no singles). The position of each hit in the album is stored as a track number in the database. Note that the album of regular users can be turned into a suggestion to other regular users with similar purchasing behavior. \r\nFinally, a users can be regular user on some occasions (e.g., when downloading a single or album), and a business user at other times (e.g., when uploading self-made songs to Musicmatic).",
     "classCount": 8,
-    "associationCount": 10,
+    "associationCount": 11,
     "hasExtraMaterial": false,
     "hasComposition": false,
     "hasAggregation": false,
@@ -334,8 +524,10 @@
     "hasAssociationClass": false,
     "language": "English",
     "tags": [],
-    "domain": [],
-    "source": "KU Leuven, LIRIS",
+    "domain": [
+      "Media and Publishing"
+    ],
+    "source": "KU Leuven, LIRIS - Handbook Principles of Database Management",
     "citation": "Lemahieu, W., vanden Broucke, S., & Baesens, B. (2018). Principles of Database Management: The Practical Guide to Storing, Managing and Analyzing Big and Small Data. Cambridge: Cambridge University Press.",
     "contact": ""
   },
@@ -355,10 +547,35 @@
     "hasAssociationClass": true,
     "language": "English",
     "tags": [],
-    "domain": [],
-    "source": "KU Leuven, LIRIS",
+    "domain": [
+      "Leisure and Recreation"
+    ],
+    "source": "KU Leuven, LIRIS - Handbook Principles of Database Management",
     "citation": "Lemahieu, W., vanden Broucke, S., & Baesens, B. (2018). Principles of Database Management: The Practical Guide to Storing, Managing and Analyzing Big and Small Data. Cambridge: Cambridge University Press.",
     "contact": ""
+  },
+  {
+    "name": "ProjectManagement",
+    "description": "The following case describes a universe of research project management. The university has many research groups that belong to different departments. Researchers belong to exactly one research group. Projects are decomposed into Work Packages (WP), and each WP has exactly one research group assigned to it as WP leader. To execute a research project, researchers need to be assigned to Work Packages. \nA researcher can be assigned to any WP, independent of which RG is leading the WP. \nHowever, “service delivery” from one group to another needs to be traceable. It should be possible to have an overview of researchers from other groups working on WPs led by a RG. This “service delivery” implies that whenever a researcher changes research group, the current assignments as team member of a WP are terminated and new ones are created to keep a correct record of the service delivery. Likewise, if WP leadership is re-assigned, team member assignments are re-recorded to ensure correct recording of the service delivery.",
+    "classCount": 7,
+    "associationCount": 8,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": false,
+    "hasMethods": false,
+    "hasAssociationClass": true,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Research"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
   },
   {
     "name": "School",
@@ -379,7 +596,32 @@
     "domain": [
       "Education"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
+  },
+  {
+    "name": "SellingGoods",
+    "description": "This exercise teaches you to build and re-evaluate your solution in an iterative manner to handle changing requirements.\nFirst, create an EDG for the use case described in STEP 1, and add attributes, event types, non-default FSMs and constraints if necessary. For each step, revise your model and add, remove or change elments where necessary.\n-------------------------------------------------------------------------------------------------\nSTEP 1\nYour brand new company sells goods to local supermarkets. You want to create a simple information system to keep track of your stock, your customers and their orders.\n\nWhen you register a new customer, you enter their address and VAT number.\n\nTo keep track of your stock, you want to be able to register the products you offer and the current stock of each product. Your customers' orders consist of one or more order lines, with each order line recording the quantity ordered of a particular product.\n\nTo minimise the overhead of managing payments and deliveries for your small business, your customers are required to pay for their order in full before it is sent out for delivery. Similarly, orders are always shipped in their entirety to keep shipping simple. To ensure that you have the information you need for your accounts, you want to record when orders are paid for and shipped.\n\nAt the end of each working day, you manually adjust the stock levels of your products in the system based on the orders placed that day.\n\nSTEP 2\n\nAs your business grows, you start to offer more exclusive products that are not always available. To ensure customer satisfaction, you want to start organising deliveries on a line-by-line basis so that available products can be shipped immediately and unavailable products can be shipped later.\n\nOf course, you need to adapt your information system to keep track of partially shipped orders so that you can record which order lines have been shipped and which are still on the to-be-shipped list. Orders that have been fully shipped will also be marked so that you know that they can be removed from your watchlist.\n\nSTEP 3\n\nAs your products become more popular, you start supplying larger supermarkets. These supermarkets sometimes have several warehouses that they use for different locations. You want to start keeping track of both the customer's head office address and the addresses where the orders are delivered.\n\n To further professionalise your business, you want to send invoices to your customers for their orders. Customers can now choose to pay the invoice directly when they place the order, or after the order has been delivered. An order should still be paid in full.\n\nSTEP 4\nAs your business grows, keeping track of shipments on a line-by-line basis becomes too cumbersome. You would prefer to do this for each group of order lines that are shipped together.\n\n In addition, you have recently noticed some problems with the delivery service you use, as customers have informed you that some deliveries are missing or damaged. You want to gather more information about the deliveries in order to decide whether you should switch to another delivery service or start delivering yourself. To do this, you want to know the status of each delivery (remember that partial deliveries of one or more order lines are possible). You want to track a shipment as it is packed, shipped and received by the customer.",
+    "classCount": 8,
+    "associationCount": 9,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": true,
+    "hasMethods": false,
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Sales"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
   },
   {
     "name": "Sightseeing",
@@ -398,9 +640,11 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "Tourism"
+      "Leisure and Recreation"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
   },
   {
     "name": "Sober",
@@ -418,10 +662,35 @@
     "hasAssociationClass": true,
     "language": "English",
     "tags": [],
-    "domain": [],
-    "source": "KU Leuven, LIRIS",
+    "domain": [
+      "Personal Activities"
+    ],
+    "source": "KU Leuven, LIRIS - Handbook Principles of Database Management",
     "citation": "Lemahieu, W., vanden Broucke, S., & Baesens, B. (2018). Principles of Database Management: The Practical Guide to Storing, Managing and Analyzing Big and Small Data. Cambridge: Cambridge University Press.",
     "contact": ""
+  },
+  {
+    "name": "StudentAppointment",
+    "description": "Students can ask questions about the courses they are following by making an appointment with the teaching assistants of these respective courses. To be able to manage the high demand for appointments with the teaching assistants, a system is made to keep track of every appointment of a teaching assistant and a student(s). A student can only request an appointment for a particular course when (s)he is also registered for the respective course. A teaching assistant can also only provide help for the courses (s)he is teaching. An appointment is always for only one specific course, and with one particular assistant who is TA (teaching assistant) for that course.\r\n",
+    "classCount": 6,
+    "associationCount": 6,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": false,
+    "hasMethods": false,
+    "hasAssociationClass": true,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Education"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
   },
   {
     "name": "TransportCompany",
@@ -440,16 +709,41 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "Service Provider"
+      "Logistics"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
+  },
+  {
+    "name": "TreatmentPlans",
+    "description": "In hospitals, doctors prescribe examinations for patients. Different types of examinations exist, such as \"cardiologic test\", \"echography\", \"radiology\", \"scanner\", … Every single examination is of only one type.  Not all possible types of examinations are allowed for all hospitals. For example, some hospitals have no permission for executing NMR scans. A hospital can apply for permission for types of examination.\r\nSuppose the hospital wants to improve & monitor the quality of treatments. In order to do so, per type of problem, a treatment plan is defined. A treatment plan lists the advised types of examinations. When a patient comes with a particular problem, the diagnosis is posed by a doctor affiliated to the hospital visited by the patient. The doctor will define an actual treatment based on an existing treatment plan for the identified problem. The actual treatment of the patient can deviate from the standard treatment plan: it can consist of both advised examinations and freely chosen medical actions. Also, examinations are not necessarily at the same hospital: a doctor can send a patient to another hospital if his/her own hospital doesn't have a permission for the desired examination. By registering all this information, the hospital wants to ensure that examinations are only performed according to permissions, and monitor how much actual treatments diverge from advised treatment plans.",
+    "classCount": 14,
+    "associationCount": 18,
+    "hasExtraMaterial": true,
+    "hasComposition": false,
+    "hasAggregation": false,
+    "hasInheritance": false,
+    "hasAbstract": false,
+    "hasEnumeration": false,
+    "hasAttributes": true,
+    "hasMethods": false,
+    "hasAssociationClass": true,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Healthcare"
+    ],
+    "source": "KU Leuven, LIRIS - https://merode.econ.kuleuven.be/cases/index.asp",
+    "citation": "",
+    "contact": "monique.snoeck@kuleuven.be"
   },
   {
     "name": "TruckLogistics",
     "description": "Locations consist of drivers with first and last names and vehicles. Each location has its own address. There are three types of vehicles: trucks, cars and vans. Each vehicle has a vehicle number. While trucks also have a certain weight, passenger cars have a certain number of seats. In addition to vehicles and drivers, orders are also managed. Orders are carried out by drivers. Drivers carry out a maximum of one order assigned to them at any one time. Orders always have an origin and a destination location, at least one assigned driver and the date of execution. In addition to order management, the system also records which vehicles are driven by which driver. For this purpose, vehicles are assigned up to one driver who drives these vehicles.\n",
     "classCount": 7,
     "associationCount": 10,
-    "hasExtraMaterial": false,
+    "hasExtraMaterial": true,
     "hasComposition": true,
     "hasAggregation": false,
     "hasInheritance": true,
@@ -459,19 +753,22 @@
     "hasMethods": false,
     "hasAssociationClass": false,
     "language": "English",
-    "tags": [],
-    "source": "RWTH SWTExamWS1213",
-    "domain": [
-      "logistics",
+    "tags": [
       "automotive"
-    ]
+    ],
+    "domain": [
+      "Logistics"
+    ],
+    "source": "RWTH SWTExamWS1213",
+    "citation": "",
+    "contact": "netz@se-rwth.de"
   },
   {
     "name": "University",
     "description": "A university consists of several faculties, which are made up of various institutes. Each faculty and institute has a name. The address of each institute is known. \nEach faculty is headed by a dean, who is an employee of the university. \nThe total number of employees is known. Employees have a social security number, a name, and an email address. A distinction is made between research and administrative staff. \nResearch assistants (RA) are assigned to at least one institute. The field of research of each RA is known. In addition, RAs can be involved in projects for a certain number of hours, whereby the name, start and end dates of the projects are known. Some RAs teach courses. In this case, they are referred to as lecturers. \nCourses have a unique number (ID), a name and a weekly duration in hours.\n",
     "classCount": 9,
     "associationCount": 9,
-    "hasExtraMaterial": false,
+    "hasExtraMaterial": true,
     "hasComposition": true,
     "hasAggregation": true,
     "hasInheritance": true,
@@ -483,16 +780,18 @@
     "language": "English",
     "tags": [],
     "domain": [
-      "university management"
+      "Education"
     ],
-    "source": "TU Wien, Business Informatics Group"
+    "source": "TU Wien, Business Informatics Group",
+    "citation": "",
+    "contact": "charlotte.verbruggen@tuwien.ac.at"
   },
   {
     "name": "eHome2020",
     "description": "As a project manager of a medium-sized software company you are responsible for the successful implementation of the system described below. In the first 5 tasks of this exam you will produce a specification step-by-step.\nShort description:\nInfrastructure and software platform for capturing energy consumption data in private homes.\nThe customer:\nHomeTec is a small company in the domain of building engineering which manufactures sensors which can be installed in private homes. The company is, same as your company, located in Aachen. \nDetailed system description:\nThe system “E-Home-2020” consists of a set of multiple sensors, which report their values to a connected SensorController. Furthermore, the SensorController stores information about the apartment with its inhabitants. The apartment’s inhabitants can log on to the SensorController by using their username and password and query values for each installed sensor. Moreover, they can specify a threshold for each sensor. An external System called „E-Monitor“  is attached to the system and checks all thresholds for each sensor automatically. If the sensor’s threshold is exceeded and if an email address has been specified for the apartment, “E-Monitor” will send alert messages via the “E-Home-2020” system. \nSome inhabitants have administrative rights which enable them to configure sensors. This includes assigning sensors to a new room or changing the sensor’s description.\nAt the moment, the company HomeTec manufactures two types of sensors: temperature sensors and power sensors (the latter are installed in a plug-and-play fashion between the power-socket and the respective appliance). Temperature sensors have a valid value range (min , max). Power sensors store the total power consumption as counter reading. All sensors have a unique vendor-id, a description (e.g. “temperature radiator living room” or “power consumption microwave oven”) and a unit. Possible units are CELSIUS and WATT. Each sensor is assigned to exactly one room. An apartment has an address and consists of at least two rooms. Rooms have a description (e.g. „living room“). For each sensor one can query the respective measured values, which are stored in the system. Each value has a timestamp and the corresponding value as a floating point number. For quick access one can access the last value of a sensor directly.\nGoal of project:\nThe goal of the project is the development of a prototype, which works on a specific target platform in a specific environment and provides essential functionality.\n",
     "classCount": 8,
     "associationCount": 10,
-    "hasExtraMaterial": false,
+    "hasExtraMaterial": true,
     "hasComposition": true,
     "hasAggregation": false,
     "hasInheritance": true,
@@ -500,6 +799,14 @@
     "hasEnumeration": true,
     "hasAttributes": true,
     "hasMethods": false,
-    "hasAssociationClass": false
+    "hasAssociationClass": false,
+    "language": "English",
+    "tags": [],
+    "domain": [
+      "Manufacturing"
+    ],
+    "source": "RWTH",
+    "citation": "",
+    "contact": "netz@se-rwth.de"
   }
 ]
