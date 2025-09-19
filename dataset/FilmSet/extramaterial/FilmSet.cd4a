@@ -1,0 +1,70 @@
+classdiagram FilmSet {
+
+  enum Genre {
+    Thriller,
+    Action,
+    Horror,
+    Comedy;
+  }
+
+  abstract class Employee {
+    String Name;
+    int Ssn;
+  }
+
+  abstract class CreativeEmployee extends Employee {
+    boolean Oscar;
+  }
+
+  class Technician extends Employee {
+    String FieldOfActivity;
+  }
+
+  class Director extends CreativeEmployee {
+    String AssistentName;
+  }
+
+  class Actor extends CreativeEmployee {
+    String Education;
+  }
+
+  class Screenplay {
+    String Title;
+    String Version;
+    Date Date;
+    int NumberOfScenes;
+    String Plot;
+  }
+
+  class FilmSet {
+    String Location;
+  }
+
+  class Film {
+    String Title;
+    int Year;
+    Genre Genre;
+  }
+
+  class ScreenplayAuthor {
+    String Name;
+  }
+
+  class Book {
+    String Title;
+    String Author;
+  }
+
+  class Concept {}
+
+  // Associations
+  association [1] Director -> Screenplay [*];
+  association [*] Actor -> (reads) Screenplay [*];
+  association [*] Employee -> FilmSet [1];
+  association [*] FilmSet -> Film [*];
+  association [1] Film -> (MostSuccessful) ScreenplayAuthor [0..1];
+  association [1] ScreenplayAuthor -> (creates) Screenplay [*];
+  association [1] Film -> Screenplay [1];
+  association [0..1] Screenplay -> Book [0..1];
+  association [0..1] Screenplay -> Concept [0..1];
+}
